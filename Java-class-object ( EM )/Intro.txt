@@ -1,0 +1,89 @@
+
+
+java
+------------
+  1. Java SE
+    - stand-alone/desktop appln
+    - basic n/wing appln 
+  2. Java EE
+    - web appln
+    - enterprise appln 
+  3. Java ME
+  4. Java Fx
+  5. Embbeded Java  
+
+--------------------------------------------------
+
+java pgmming style : 'component & container' style
+
+ component ==> appln business-logic
+ container ==> appln infra-logic 
+
+
+ a. Java SE
+ ----------
+
+    a. application         : JRE 
+    b. applet              : browser with JRE
+
+ b. Java EE
+ ------------
+
+    a. servlet & JSP ( web-components)   : web-container e.g Tomcat,Jetty,....
+    b. EJB ( enterprise java bean)       : ejb-container 
+
+-----------------------------------------------------
+
+
+Java Environment
+-------------------
+
+   1 - developement envi
+
+        - editor/IDE ==> eclipse,intellij
+        - JDK
+            - compiler
+            - tools ...
+        - build-tools 
+            - ANT ( Another Neat Tool)
+            - Maven   ( we do learn )
+            - Gradle
+            - SBT
+            - IVy...
+
+   2 - deployement
+
+        - JRE
+  -------------------------------------------------
+
+  " Hello- World "
+
+  ------------------------------------------------
+
+  "Java - Syntax "
+
+  ------------------------------------------------
+
+
+  OOP in Java
+   
+   
+      - class & object
+      - 
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+
+

@@ -1,0 +1,56 @@
+
+
+Abstraction & Encapsulation
+-------------------------------
+
+how to implement in Java ?
+
+
+
+	-> using access-specifiers & packages
+	-> using class & interfaces
+	-> using accessor methods ( set & get )
+	-> using proper structural & Behavioral design patterns
+	
+--------------------------------------------------
+
+-> using access-specifiers & packages
+
+	e.g
+	
+	proj
+	
+		- p1 
+		
+			- A.java
+			- B.java  extends A
+			- C.java
+		- p2
+			-D.java extends A
+			-E.java		
+	
+----------------------------------------------------------------------------
+
+
+		--------------------------------------------------------------------
+		same-package                             |    other-package
+		--------------------------------------------------------------------	
+		same-class   | child-class | other-class |   child-class | other-class
+		--------------------------------------------------------------------	
+	
+private    Y               N            N                N             N
+default    Y               Y            Y                N             N	
+pro        Y               Y            Y                Y             N
+public     Y               Y            Y                Y             Y 
+	
+	
+	
+----------------------------------------------------------------------------	
+-> using accessor methods ( set & get )	
+----------------------------------------------------------------------------	
+-> using class & interfaces
+----------------------------------------------------------------------------	
+	
+	
+		
+	
