@@ -1,0 +1,304 @@
+
+
+// 1. java project
+=========================
+
+  proj
+  -----
+  |
+  |----- p1  ( .java / .class )
+  |
+  |
+  |------p2
+  | |--------p2.1
+  |
+  |
+  |
+  
+  
+  ----------------------------------------------------------------------------
+  
+  2. JavaFile  
+  ==============
+  
+   PublicType.java
+  |-------------------------------------
+  |// package declaration ( 1 )
+  |
+  |// import statement(s) ( n )
+  |
+  |// public Type ( class | interface | enum | annotation ) ( 1 )
+  |
+  |// default Types  ( n )
+  |
+  |-------------------------------------------
+  
+  
+  ----------------------------------------------------------------------------
+  
+  
+  3. package declaration  
+  =======================
+  
+  
+   why we need ?
+   
+   ==> to avoid type name collisions
+   ==> for better modularity.
+  
+  
+  	syntax:
+  	--------
+  	
+  	package root;
+  	        root.sub1;
+  	        root.sub1.sub2;
+  	        
+  	
+  	guideline to write package declaration :
+  	
+  	e.g
+  	
+  	 Employee.java ==> emp ==> em ==> sapient ==> com;
+  	 
+  	 package company-type.company-name.project-name.module-name;
+  	 
+  	 e.g
+  	 
+  	 package comp.sapient.em.emp;
+  	 
+  	         
+  ----------------------------------------------------------------------------
+  
+  4. Import statements
+  ======================
+  
+  e.g
+  
+   proj
+  
+  	- p1 ( A.java , B.java )
+  	- p2 ( C.java , D.java )
+  	  - p21 ( E.java )
+  	- p3 ( E.java )  
+  	  
+  	-----------------------------
+  	|package p1;
+  	|
+  	|import p2.C;
+  	|import p2.D
+  	|
+  	| // or
+  	|
+  	|import p2.*
+  	|import p2.p21.*;
+  	|import p3.*;
+  	|
+  	|public class A{
+  	| B b;
+  	| C c;
+  	| D d;
+  	| p3.E e;
+  	|}
+  	|
+  	|
+  	|-----------------------------
+  	
+  	
+  	  
+  ----------------------------------------------------------------------------
+  
+  
+  OO concepts
+  ------------
+  
+  what is object ?
+  
+  
+   - data,info,attributes,properties  ==> State
+   - work,operation,function,method   ==> Behavior
+   - location,address,reference       ==> Identity
+   
+   object  ===> SBI
+   
+   
+   similar-objects
+   
+   	--> have common state-definition  but different values
+   	--> have common behavior  but return different result/value
+   	
+  	
+  	what is class ?
+  	
+  	==> description/template/blue-print  ( state/behav ) of similar objects
+  	
+   
+   
+   	class  ==> instance(s)   ==> objects
+   
+   
+   --------------------------------------------------- 	
+   
+   
+   OO concepts
+   --------------
+   
+    1. Front-End / Interface / Abstraction
+    
+       why we need ?
+       
+       ==> easy to use/learn by dependent-object
+       ==> loose-coupling b/w dependent & dependency objects
+       
+    2. Back-End / Implementation / Encapsulation
+    
+       ==> to hide complexity
+       ==> to protect secure state/behav from dependent
+       
+    3. Inheritance
+    
+    		==> inherit common state/behav from generalized-class to specialized classes
+    		
+    4. Polymophism
+    
+    		== object can do same behav in different-way based input/envi 		      
+  	
+  	---------------------------------------------------------------
+  	
+  	
+  	5. class Syntax
+  	====================
+  	
+	  	
+	  	
+	 ________ __________	class Name [extends] BaseClass{
+	 [public] [abstract]		  	   [implements] Interface1,Interfce2
+	 [      ] [final]    	// State ==> variables
+	          [strictfp] 	// constructor(s)
+			  		    		// Behav ==> methods
+			  		    		// Inner Type ( class | Interface | enum )
+	-------------------
+	[private] [static]		  	
+	[public]		  	        }
+	[protected]  	
+	[       ]  	
+	  	
+ --------------------------------------------------------- 
+ 
+ 
+ 	6. Interface
+ 	====================
+ 	
+ 	interface Name [extends] Interface1,Interface2{
+ 	
+	 	// Constant-State
+	 	 public static final	Type varName=value;
+	 	 
+	 	// Abstract-Behav
+	 	public abstract Return-Type methodName([args])[throws]CheckedException;
+	 	
+	 	// if java-8
+	 	
+	 	public default Return-Type methodName([args])[throws]CheckedException{
+	 	
+	 	}
+	 	public static Return-Type methodName([args])[throws]CheckedException{
+	 	
+	 	}
+ 	
+ 	
+ 	}
+  
+  ------------------------------------------------------------------
+  
+   // 7. Enum
+   
+   ==> group of related constants with Type Name
+   
+   enum Gender{
+   	MALE,FEMALE
+   }
+   enum Days{
+   	MON,TUE,WED,...
+   }
+   
+   ------------------------------------------------------------------
+   
+   // 8. Annotation
+   
+   ==> to describe java program to other ( compiler, runtime , tool, F.W )
+   
+   syntax:
+   --------
+   
+   @interface Name{
+   	// properties
+   	public Type propName();
+   }
+  
+  ------------------------------------------------------------------
+  
+  
+  // 9. variables
+  =================
+  
+  	
+  	2 types of variables
+  	-------------------
+  	
+  	 1. simple / primitives ====> values
+  	 2. complex / reference / user-defined ===> objects
+  	 
+  	 class Employee{
+  	 	static String tnrName;
+  	 	int id;
+  	 	String name;
+  	 	void m(){
+  	 		int loc;
+  	 	}
+  	 }
+  	 
+  	 syntax
+  	 --------
+  	 
+	  ________	 	__________ Data-Type varName = [value/object];
+	  [public]      [static ]
+	  [protected]   [final  ]
+	  [private]     [volatile]
+	  [   ]         [transient]
+	  
+	  	-local-var-
+	  -------------------------
+	  -Nil-         [final]
+	  
+  
+  --------------------------------------------------------------------
+	  
+	   10 - methods
+	   ==============
+		   
+		   
+	_______	 	________  ReturnType methodName([args]) [throw] CheckedException{
+	[public]	 	[static  ]  	
+	[private]	[final	 ]  		// A,R,L & assignment operations
+	[protected]	[abstract]	   	// Conditional statements
+	[    ]      [synchronized]		   		// Looping statements
+		        [strictfp]	   	// Invoke other's behav
+	            [native]		   		
+			   					[return ][result] ==> value/object
+		   	
+		   		}
+	  
+	  
+  --------------------------------------------------------------------
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
