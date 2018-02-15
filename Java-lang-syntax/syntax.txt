@@ -293,6 +293,36 @@
   --------------------------------------------------------------------
   
   
+  Naming convention
+  ---------------------
+  
+  ----------------------------------------------------------
+  
+  keywords ==> lower-case
+  
+  package-name ==> lower-case
+  
+  Type-name ( class | interface | enum | annotation )  ==> pascal-case i.e  A______B______
+  
+  var / method name  ===> camel-case  i.e _______A_____B______
+  
+  constant variables   ==> upper-case
+  
+  ----------------------------------------------------------
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
   
   
   
