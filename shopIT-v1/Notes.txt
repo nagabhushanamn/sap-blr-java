@@ -1,0 +1,7 @@
+
+
+// shopIT
+----------------
+
+  1. Billing     : getTotalPrice(cart)
+  2. PriceMatrix : getPrice(item)
