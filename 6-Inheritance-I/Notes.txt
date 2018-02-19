@@ -1,0 +1,53 @@
+
+
+
+Inheritance
+-------------
+
+
+	re-use/inherit common properties/behav
+	form more generalized lass to specialized class's objects
+	
+	
+	why we need ?
+	
+	==> can re-use common props & behav
+	==> we can't appln with new features
+	
+	-------------------------------------------
+	
+	IS-A relation-ship
+	
+	-----------------------------------------
+	
+	super / base / parent / generalized
+	sub  / derived / child / specialized
+	
+	------------------------------------------
+	
+	types:
+	-------
+	
+		- single-level  ( A <------- B )
+		- multi-level   ( A <-------- B <-------- C )
+		- multiple      ( A,B <-------- C )                   ( java wont support )
+	
+	
+	---------------------------------------------
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	

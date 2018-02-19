@@ -1,0 +1,16 @@
+
+
+
+object-module-1                                    
+--------------
+
+top-level : Interface
+
+middle-level : Partial-implementation ( abstract-class ) ==> optional
+
+bottom-level : Implementation(s) ( class )  
+
+
+
+object-module-2
+------------------

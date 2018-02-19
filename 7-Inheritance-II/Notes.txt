@@ -1,0 +1,25 @@
+
+
+override
+-----------
+
+  re-implementing base-class's behavior
+  in different way in derived class.
+  
+  
+  coding rules
+  -------------
+  
+  	must be same
+  	
+  		-> method-name
+  		-> type & order & number of arguments
+  		-> return type
+  		
+    may different
+    
+    		--> access specifier
+    		
+    			rule : shud not reduce visibility
+    			
+----------------------------------------------    					
