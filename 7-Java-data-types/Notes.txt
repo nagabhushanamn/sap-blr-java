@@ -1,0 +1,82 @@
+
+
+ java- data-types
+ -------------------
+ 
+ by Type
+ ----------
+ 
+ 1. simple / primitives  ==> values
+ 2. complex / reference types	 ==> objects
+ 
+ //---------------------------------------------------------- 
+ 
+ 	1. simple / primitives  ==> values
+ 	
+ 		a. signed
+ 		
+ 			i. integral
+ 			
+ 				- byte  ( 8 )
+ 				- short ( 16 )
+ 				- int   ( 32 )
+ 				- long  ( 64 )
+ 			
+ 			ii. real
+ 			
+ 				- float  ( 32 )
+ 				- double ( 64 )
+ 		
+ 		b. un-signed 
+ 		
+ 				- char ( 16 )
+ 				
+ 	    c. boolean
+ 	    
+ 	    			- boolean ( 1 )  true | false
+ 	    			
+ 	  -------------------------------------------------  			
+ 	    			
+ 	    	range formula :			
+ 	    	
+ 	    	          -2^n-1 to 0 - 2^n-1 -1		
+ 	    	          
+ 	 -------------------------------------------------  	          
+ 				
+ 				
+ 	 2. complex / reference types	 ==> objects
+ 	 
+ 	 ReferenceType varName;
+ 	 
+ 	 
+ 	 ReferenceType can be
+ 	 
+ 	 		- class      
+ 	 		- interface
+ 	 		- enum
+ 	 		- annotation
+ 	 
+ 	 
+ 	 
+ 	 -------------------------------------------------  
+ 	 
+ 	 
+ 	 
+ by Scope
+ ----------
+ 
+ 
+ 	 - local
+ 	 - instance
+ 	 - class
+ 	 
+ 	 
+ 	 
+ 	 
+ 	 		
+ 				
+ 				
+ 				
+ 				
+ 				
+ 				
