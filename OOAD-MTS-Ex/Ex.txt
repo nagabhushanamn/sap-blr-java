@@ -1,0 +1,40 @@
+
+
+
+
+
+ MTS- Money Transfer System
+ ----------------------------
+ 
+ 
+ step-1 :business data / domain objects ==> model
+ -------------------------------------------------
+ 
+ 	a. Customer
+ 	b. Account
+ 	c. Txn
+ 	
+ 	........
+ 	
+step-2 : Layer(s)
+---------------------
+
+	a. service-layer / business-layer ==> processing logic
+	
+		- TransferService
+		
+			-transfer(amount,fromAcc,toAcc)
+			-
+			
+	b. data-layer / repository-layer  ==> persisting logic
+	
+	    - AccountRepository
+	    
+	    		
+------------------------------------------------------------------	
+	
+	
+	
+	
+	
+	 	
