@@ -1,0 +1,39 @@
+
+OO : design-patterns
+-------------------- 
+
+1. creational
+
+	- singleton
+	- factory
+	- Abstract factory
+	- builder
+	- prototype
+	
+2. structural
+
+    - Bridge
+    - proxy
+    - decorator
+    - flyweight
+    - Composite
+    - Facade
+    
+3. Bevioral
+
+	- listener/observer
+	- chain-of-responsibility
+	- Iterator
+	- Command
+	- Momento
+	- Strategy
+	- Visitor
+	- Intepretor
+	- Template method
+	- Mediator
+	
+	
+	
+	
+	
+	    	
