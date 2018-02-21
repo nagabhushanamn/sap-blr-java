@@ -1,0 +1,71 @@
+
+
+
+
+Exception:
+-----------
+
+ ==> un-expected program-flow disturb at runtime
+ 
+ 
+ reasons for exceptions
+ -----------------------
+ 
+ 	--> divide by zero
+ 	--> array index out of bound
+ 	--> class-cast exceptions
+ 	--> number format exception
+ 	--> null pointer 
+ 	--> IO
+ 	--> SQL
+ 	................... 
+ 	
+ 	
+ what happen if exception happen ?
+ ----------------------------------
+	 
+	 by default
+	 to be safe , JRE will terminate application process.	
+ 
+ 
+ how to handle exception?
+ ----------------------------------
+ 
+ 	==> using Exception Handler(s)
+ 	
+ 		- try,catch,finally
+ 		- throws
+ 		- throw
+ 		
+  advantages of Exception-Handler(s)
+  ---------------------------------- 		
+ 
+ 
+ 	Advantage 1: Separating Error-Handling Code from "Regular" Code
+ 	Advantage 2: Propagating Errors Up the Call Stack
+ 	Advantage 3: Grouping and Differentiating Error Types
+ 	
+ 	
+ -----------------------------------------------------------------------	
+ 
+ 
+ 
+   Types of Exceptions
+   --------------------
+   
+   - Checked 
+   - UnChecked
+   
+   
+   -------------------------------------------
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 

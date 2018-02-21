@@ -1,0 +1,101 @@
+
+
+
+
+how to handle strings in java-lang ?
+
+
+using
+
+	- java.lang.String
+	- java.lang.StringBuffer  ( thread-safe )
+	- java.lang.StringBuilder ( not thread-safe )
+	
+	
+notes:
+--------
+
+	=> by default all strings are objects
+	
+	==> all instances of 'java.lang.String' are immutable
+	
+	==> all instances of 'java.lang.StringBuffer' & 'java.lang.StringBuilder' are mutable
+	
+	
+---------------------------------------------	
+
+- java.lang.String  ( literal object )
+
+	==> we can instance with/without 'new' operator 
+	
+	
+	
+	if we create string object without 'new' keyword, 
+	that object will be placed into 'SCP'(String Constant Pool ) memory.
+	
+	SCP
+	-------
+	
+		==> already allocated memory
+		==> can hold unique objects
+		
+		
+	--------------------------------------------------------------------------------
+	
+	
+	Q1:
+	
+	  --> Get 'SSN' string input from user & validate
+	  
+	  	ssn format : 'XXX-XX-XXXX'
+	  	
+	  		X -> any digit
+	----------------------------------------------------
+
+	 Q2: print dep total salry
+	 
+	 -->  String[] records={
+	 						"A,IT,1000.00",
+	 						"B,IT,2000.00",
+	 						"C,SALES,3000.00",
+	 						"D,IT,5000.00"	
+	 					   } 	
+	  
+	   o/p
+	   
+	   IT ==> 8000
+	   SALES ==> 3000
+	   
+	 ----------------------------------------------------
+	   
+	  
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		
+		
+		
+		
+		
+	
+	
+	
+	
+	
+	
