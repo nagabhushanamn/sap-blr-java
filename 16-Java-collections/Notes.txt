@@ -1,0 +1,175 @@
+
+
+ data-structure
+ ---------------
+ 
+  => organize memory for program to do CRUDSS operations
+  
+  
+  types
+  --------
+  
+     1. primary / primitives
+     
+     	==> can hold single data-element
+     	
+     2. secondary 
+     
+     	==> can hold multiple data-element 	
+     	
+     	 a. linear
+     	 
+     	 	- array
+     	 	- linkedlist
+     	 	- queue
+     	 	- stack
+     	 	..
+     	 
+     	 b. non-linear
+     	 
+     	 	- tree
+     	 	- graph
+     	 	....
+     	 
+     	--------------------------------------
+     	
+     	 
+     	 
+     	 
+     	 Collections Framework
+     	 -------------------------
+     	 
+     	 ==> ready-made / pre-defined secondary-data-structures by java-community
+     	 
+     	 
+     	 def : group of data-elements ( objects )
+     	 
+     	 
+     	 Benefits of the Java Collections Framework
+     	 -------------------------------------------
+     	 
+     	 => Reduces programming effort
+     	 => Increases program speed and quality
+     	 => Allows interoperability among unrelated APIs
+     	 => Reduces effort to learn and to use new APIs
+     	 => Reduces effort to design new APIs
+     	 => Fosters software reuse
+     	 
+     	 -----------------------------------------------------------
+     	 
+     	  Design of the Java Collections Framework
+     	 -------------------------------------------
+     	 
+     	 Top-Level    : Interface(s)
+     	 
+     	 Bottom-Level : Implementation(s)
+     	 
+     	 -----------------------------------------------------------
+     	 
+     	 Types of collection(s)
+     	 
+     	  1. List
+     	  
+     	  	 --> ordered o/p
+     	  	 --> indexed
+     	  	 --> can store duplicate elements
+     	  	 
+     	  2. Set
+     	  
+     	  	-> No index
+     	  	-> can store Unique elements
+     	  	
+     	  3. Map
+     	  
+     	  	 ==> key + value 
+     	  	 
+     	  	 key --> uniqueue
+     	  	 value --> can be duplicate
+     	  	 
+     	  --------------------------------------------------------	 
+     	  
+     	  
+     	  Implementation(s)
+     	  ----------------------------
+     	  
+     	  
+     	  1. List  
+     	  
+     	  	- Vector     ==> dynamic-array  + thread-safe
+     	  	- ArrayList  ==> dynamic-array
+     	  	- LinkedList ==> double-linked-list
+     	  	- Stack extends Vector  ==>  LIFO principle
+     	  	
+     	  2. Set
+     	  
+     	  	- TreeSet       ==> binary-tree --> sorted o/p
+     	  	- HashSet       ==> hashtable   --> un-ordered
+     	  	- LinkedHashSet ==> DLL + hashtable	--> ordered
+     	  	
+     	  3. Map
+     	  
+     	  	- TreeMap       ==> binary-tree --> sorted o/p
+     	  	- HashMap       ==> hashtable   --> un-ordered
+     	  	- LinkedHashMap ==> DLL + hashtable	--> ordered
+     	  	- Hashtable     ==> hashtable  --> thread-safe
+     	  	
+     	  4. Queue
+     	  
+     	  	 - LinkedList
+     	  	 - PriorityQueue
+     	  	 - Dequeue
+     	  	 ..
+     	  	 
+     	  --------------------------------------------------------------
+     	  
+     	  
+     	  ref : https://www.edureka.co/blog/java-collections/
+     	  
+     	  	  	
+     	  		
+     	  	 		 
+     	  	 
+     	 
+     	 
+     	 -------------------------------------------------------------
+     	 
+     	 
+     	 PM ( Product Management ) app
+     	 ------------------------------
+     	 
+     	 1. Model
+     	 
+     	 	- Product
+     	 	
+     	 2. Repository
+     	 
+     	 	-InMemoryProductRepository
+     	 
+     	 	any colln: List / Set  ==> to hold product
+     	 	
+     	 		- add(product)
+     	 		- get(id)
+     	 		- update(id,price)
+     	 		- remove(id)
+     	 		- viewAll()
+     	 		- sortBy(name|price)
+     	 		
+     	 3. App
+     	 
+     	 
+     	 ---------------------------------------------------------		
+     	 
+     	 	 	
+     	 
+     	 
+     	 
+     	 
+     	 
+     	 
+     	 
+     	 
+     	 
+     	 
+     	 
+     	
+     	
