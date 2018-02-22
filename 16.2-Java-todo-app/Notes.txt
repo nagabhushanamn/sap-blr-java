@@ -1,0 +1,28 @@
+Todo App
+-----------
+1. model
+---------
+	1. Todo
+		-id
+		-title
+		-completed
+		
+2. service layer
+------------------
+	1. TodoService
+		-addTodo(title)
+		-editTodo(id,newTititle)
+		-deleteTodo(id)
+		-completeTodo(id)	
+		-completeAll()
+		-clearCompleted()
+		-viewAll(filter)  ==> filter : all | active | completed
+-------------------------------------------------	
+App
+------	
+	Test here
+---------------------------------------------------	
+
+
+
+	
