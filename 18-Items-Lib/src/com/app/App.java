@@ -1,14 +1,13 @@
 package com.app;
 
 import java.time.LocalDate;
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
 import com.app.functions.Consumer;
 import com.app.functions.Mapper;
 import com.app.functions.Predicate;
-import com.app.lib.ItemsLib;
+import com.app.lib.ItemsLib_v2;
 import com.app.model.Gender;
 import com.app.model.Person;
 import com.app.model.Product;
@@ -29,28 +28,48 @@ public class App {
 
 		// ---------------------------------------------------------------------
 
-		ItemsLib itemsLib = new ItemsLib();
+		ItemsLib_v2 itemsLib = new ItemsLib_v2();
 
-		List<Person> output = itemsLib.filter(people, new Predicate() {
+		List<Person> females = itemsLib.filter(people, new Predicate<Person>() {
 			@Override
 			public boolean test(Person person) {
 				return person.getGender() == Gender.FEMALE;
 			}
 		});
-		itemsLib.forEach(output, new Consumer() {
+
+		List<String> femaleNames = itemsLib.map(females, new Mapper<Person, String>() {
 			@Override
-			public void apply(Person person) {
-				System.out.println(person.getName() + " - " + person.getDob());
+			public String map(Person item) {
+				return item.getName().toUpperCase();
+			}
+		});
+		
+		List<LocalDate> dates=itemsLib.map(females, new Mapper<Person, LocalDate>() {
+			@Override
+			public LocalDate map(Person item) {
+				return item.getDob();
+			}
+		});
+		
+		itemsLib.forEach(femaleNames, new Consumer<String>() {
+			@Override
+			public void apply(String item) {
+				System.out.println(item);
 			}
 		});
 
-		List<String> allEmails = itemsLib.map(people, new Mapper() {
-			@Override
-			public String map(Person person) {
-				return person.getEmail();
-			}
-		});
-
+		//----------------------------------------------------------
+		
+		// java8  ==> lambda expressions & stream API
+				
+		//		people
+		//		.stream()
+		//		.filter(p->p.getGender()==Gender.FEMALE)
+		//		.map(f->f.getName().toUpperCase())
+		//		.forEach(n->{
+		//			System.out.println(n);
+		//		});
+		
 	}
 
 }

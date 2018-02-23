@@ -8,7 +8,7 @@ import com.app.functions.Mapper;
 import com.app.functions.Predicate;
 import com.app.model.Person;
 
-public class ItemsLib {
+public class ItemsLib_v1 {
 
 	/*
 	 * - filter(inputList,condition) : outputList 
@@ -30,7 +30,7 @@ public class ItemsLib {
 	public List<String> map(List<Person> list, Mapper mapper) {
 		List<String> newList = new ArrayList<>();
 		for (Person person : list) {
-			newList.add(mapper.map(person));
+			//newList.add(mapper.map(person));
 		}
 		return newList;
 	}
