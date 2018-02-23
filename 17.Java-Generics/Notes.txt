@@ -1,0 +1,13 @@
+
+
+Code that uses generics has many benefits over non-generic code:
+
+
+// why we need 'generics'
+
+ ==> Stronger type checks at compile time.
+ ==> Elimination of casts.
+ ==> Enabling programmers to implement generic algorithms.
+ 
+ 
+ 
