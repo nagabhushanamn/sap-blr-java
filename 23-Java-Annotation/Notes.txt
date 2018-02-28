@@ -1,0 +1,74 @@
+
+
+
+Annotation:
+------------
+
+special java meta-data, to describe java programming elements 
+to others ( compiler , JRE , Tool , Any framework ( i.e Junit , Spring , Hibernate .. )
+
+
+Annotations have a number of uses, among them:
+
+==> Information for the compiler 
+==> Compile-time and deployment-time processing
+==> Runtime processing 
+
+------------------------------------------------------------------ 
+
+
+
+
+Custom Annotation(s)
+--------------------
+
+
+
+  java-programming style
+  
+  
+  ===> "component(s) & container"
+  
+  
+  component ==> buiness logic
+  container ==> infra logic
+  
+  Java Appln ==> container + component(s)
+  
+  
+  1. Java SE
+  
+  	  a. application         -->         JRE-container
+  	  b. applet              -->         browser with JRE 
+  	  
+  2. Java EE
+  
+  	 a. Web components ( servlet ,JSP )   --> web-container e.g Tomcat
+  	 b. EJB components                    --> ejb container
+  	 
+  	 	  
+  
+ ---------------------------------------------------
+ 
+ 
+ e.g
+ 
+ 
+   vendor    : Container
+   
+   developer : component(s)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
